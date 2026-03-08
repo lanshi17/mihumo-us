@@ -207,5 +207,5 @@ if sudo systemctl restart mihomo; then
 else
     error_exit "systemctl restart mihomo 失败"
 fi
-
+curl -x http://127.0.0.1:7890 https://ipinfo.io/json
 log "🏁 流程结束"
